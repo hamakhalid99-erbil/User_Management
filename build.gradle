@@ -27,6 +27,15 @@ dependencies {
     runtimeOnly 'org.postgresql:postgresql'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // https://mvnrepository.com/artifact/org.webjars/bootstrap
+    implementation group: 'org.webjars', name: 'bootstrap', version: '4.3.1'
+
+    // https://mvnrepository.com/artifact/org.webjars/webjars-locator
+    implementation group: 'org.webjars', name: 'webjars-locator-core', version: '0.40'
+
+
+
 }
 
 tasks.named('test') {
